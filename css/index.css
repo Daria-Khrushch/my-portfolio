@@ -1,0 +1,392 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: rgb(252, 253, 252);
+}
+
+nav {
+  padding: 20px 0;
+  background-color: #048399;
+}
+
+a:active,
+a:hover,
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-btn {
+  background-color: #feb9c6;
+  border-radius: 10px;
+  border-color: #b96b85;
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.2s ease;
+  margin-bottom: 5px;
+  height: max-content;
+}
+
+.nav-btn:hover,
+.nav-btn:focus {
+  transform: scale(1.1, 1.1);
+  background-color: #feb9c6;
+  border-color: #b96b85;
+  color: #fff;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-btn-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.my-logo {
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (min-width: 450px) {
+  .nav-btn-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .nav-btn:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 995px) {
+  .nav-btn {
+    font-size: 20px;
+  }
+}
+
+/* header */
+
+.header-container {
+  padding: 20px 0;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-photo {
+  display: block;
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.play {
+  background-color: rgba(4, 131, 153, 0.39);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  right: 44%;
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+.play:hover,
+.play:focus {
+  transform: scale(1.1, 1.1);
+  background-color: #048399;
+}
+
+.play-icon {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent #fff;
+  margin-right: -3px;
+}
+
+.photo-container {
+  position: relative;
+}
+
+@media screen and (min-width: 450px) {
+  .my-photo {
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .play {
+    width: 70px;
+    height: 70px;
+    top: 60%;
+    right: 42%;
+  }
+}
+
+.header-text {
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 995px) {
+  .play {
+    width: 90px;
+    height: 90px;
+    top: 60%;
+    right: 38%;
+  }
+
+  .my-photo {
+    max-width: 400px;
+    height: auto;
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  .header-text {
+    word-spacing: 3px;
+  }
+
+  .header-title {
+    font-size: 45px;
+  }
+}
+
+/* modal */
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* skills */
+
+.skills {
+  padding: 50px 0;
+  background-color: #048399;
+}
+
+.skills-title {
+  margin-bottom: 20px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-list {
+  color: #fff;
+  border: 10px dotted #feb9c6;
+  border-radius: 2px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+@media screen and (min-width: 750px) {
+  .skills-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 995px) {
+  .skills-title {
+    font-size: 45px;
+  }
+  .skills-list-items {
+    font-size: 24px;
+  }
+}
+
+/* my-projects */
+
+.projects-laptop {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .projects-laptop {
+    display: block;
+  }
+
+  .projects-mob {
+    display: none;
+  }
+}
+
+.my-projects {
+  padding: 50px 0;
+  background-image: url(/images/Picsart_22-08-05_11-48-55-486.jpg);
+}
+
+.my-projects-title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.projects-carousel {
+  margin: 0 auto;
+}
+
+.my-projects-carousel {
+  background-color: rgba(0, 0, 0, 0.12);
+  padding: 10px;
+}
+
+.projects-mob-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-mob-item {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 750px) {
+  .projects-mob-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 0;
+  }
+
+  .project-mob-item {
+    max-width: 45%;
+  }
+}
+
+/* footer */
+
+.footer {
+  background-color: #048399;
+  padding: 50px 0;
+}
+
+.contacts {
+  color: #fff;
+  font-style: normal;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 20px;
+}
+
+.contacts:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer-icon {
+  fill: white;
+}
+
+.footer-link:hover,
+.contacts:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.footer-icons {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 450px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+
+.footer-icon {
+  width: 50px;
+  height: 50px;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  align-self: center;
+  position: absolute;
+  top: 13%;
+  right: 17%;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  border-radius: 50%;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.footer-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-contacts-container {
+  display: flex;
+  flex-direction: column;
+}

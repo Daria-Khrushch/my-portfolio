@@ -355,7 +355,7 @@ a {
 align-items: center;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 550px) {
   .footer-container {
     display: flex;
     flex-direction: row;
@@ -410,7 +410,6 @@ align-items: center;
 
 .element-animation {
   margin: 2rem 0;
-  font-size: 3rem;
 
   opacity: 0;
   transform: translateY(20px);

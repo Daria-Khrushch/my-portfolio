@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
     <title>Daria Khrushch</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
   </head>
   <body>
     <nav>
@@ -38,19 +38,17 @@
           <div class="container about-me-container">
             <h1 class="header-title">Welcome to my portfolio! :)</h1>
                 <p class="header-text">
-                    My name is Daria and currently I am a full-stack developer. I am
-                    GoIt full-stack developer certified. I work with HTML, CSS,
-                    JavaScript, React and Node.js. In addition, I have practical
-                    experience in the follow-up Agile / Scrum methodology when working
-                    in a team. My passion is to ensure the success and happiness of
-                    each and every job I work on!
+                    My name is Daria and I am a full-stack developer. I have my certificate from the GoIT academy. The main stack I work
+                    with is HTML, CSS, JavaScript, React and Node.js. In addition, I have practical experience with the Agile / Scrum
+                    methodology when working in a team. I strive to ensure the success and happiness of my clients and every project I take
+                    on!
                 </p>
                     <p>I am open to discuss your project!</p>
                 <a class="btn btn-primary nav-btn" href="#footer" role="button">Contact me</a>
             </div>
             <div class="photo-container">
                 <img class="my-photo" src="./images/my-photo.jpg" alt="my-photo" />
-                <div class="play" data-bs-toggle="modal" data-bs-target="#myModal">
+                <div class="play open-modal" data-bs-toggle="modal" data-bs-target="#myModal">
                     <div class="play-icon"></div>
                 </div>
             </div>
@@ -138,7 +136,6 @@
         </div>
         <div class="projects-laptop element-animation">
             <h2 class="my-projects-title">Projects</h2>
-            <div class=""></div>
             <div id="carouselnterval" class="carousel slide projects-carousel row" data-bs-ride="carousel">
                 <div class="carousel-inner col-lg-12 my-projects-carousel">
                     <div class="carousel-item active" data-bs-interval="10000">
@@ -173,11 +170,11 @@
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselnterval" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon project-btn" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselnterval" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <button class="carousel-control-next"  type="button" data-bs-target="#carouselnterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon project-btn" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
@@ -257,7 +254,6 @@
           <div class="modal-body">
             <div class="embed-container">
               <iframe
-                src="https://www.youtube.com/embed//ntBOaJPmxdY"
                 frameborder="0"
                 allowfullscreen
               ></iframe>
@@ -267,6 +263,8 @@
       </div>
     </div>
 
+
+<script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/animation.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>

@@ -19,11 +19,17 @@ a {
   background-color: #feb9c6;
   border-radius: 10px;
   border-color: #b96b85;
+  min-width: 100px;
+  height: 50px;
   color: #fff;
   font-size: 15px;
   transition: all 0.2s ease;
   margin-bottom: 5px;
   height: max-content;
+}
+
+.nav-btn:not(:last-child) {
+  margin-bottom: 7px;
 }
 
 .nav-btn:hover,
@@ -64,7 +70,8 @@ a {
 
 @media screen and (min-width: 450px) {
   .nav-btn:not(:last-child) {
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-bottom: 0;
   }
 }
 
@@ -226,7 +233,7 @@ a {
 @media screen and (min-width: 750px) {
   .skills-container {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
@@ -278,7 +285,8 @@ a {
 
 .my-projects-carousel {
   background-color: rgba(0, 0, 0, 0.12);
-  padding: 10px;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .projects-mob-list {
@@ -291,6 +299,11 @@ a {
 
 .project-mob-item {
   margin-bottom: 20px;
+}
+
+.project-btn{
+  width: 50px;
+  height: 50px;
 }
 
 @media screen and (min-width: 750px) {

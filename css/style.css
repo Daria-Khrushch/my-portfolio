@@ -332,6 +332,10 @@ a {
   margin-bottom: 15px;
 }
 
+.my-projects-title {
+  font-size: 32px;
+}
+
 @media screen and (min-width: 320px) {
   .play {
     top: 60%;
